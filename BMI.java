@@ -1,29 +1,54 @@
 import java.util.Scanner;
+
 public class BMI {
-    public static void main(String [] args) {
-        Scanner sc = new Scanner(System.in); // Get user's height
-            System.out.println("Enter your height in feet followed by inches");
 
-            int userFeet = sc.nextInt();
-            int userInch = sc.nextInt();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-            System.out.println("You are: " + userFeet + " feet" + " and " +  userInch + " inches tall");
+        int userFeet = getUserHeight("feet", sc);
+        int userInch = getUserHeight("inches", sc);
+        System.out.println("You are: " + userFeet + " feet and " + userInch + " inches tall");
 
-            System.out.println("Enter your weight in pounds"); // Get user's weight
-            
-            float userWeight = sc.nextFloat();
-            System.out.println("Your current weight is: " + userWeight + " pounds"); // Display user's height & weight
+        float userWeight = getUserWeight(sc);
+        System.out.println("Your current weight is: " + userWeight + " pounds");
 
-            float kilograms = (float) (userWeight*0.4536);
-            float feetToMeters = (float) (userFeet/3.2808);
-            float inchesToMeters = (float) (userInch*0.0254);
+        final float POUNDS_TO_KILOGRAMS = 0.4536f;
+        final float FEET_TO_METERS = 0.3048f;
+        final float INCHES_TO_METERS = 0.0254f;
 
-            float bmiCalculation = kilograms/((feetToMeters+inchesToMeters)*(feetToMeters+inchesToMeters)); // calculate BMI
-            System.out.println("Your current BMI is: " + bmiCalculation); // Display user's BMI
+        float kilograms = userWeight * POUNDS_TO_KILOGRAMS;
+        float totalMeters = (userFeet * FEET_TO_METERS) + (userInch * INCHES_TO_METERS);
+        float bmiCalculation = calculateBMI(kilograms, totalMeters);
 
-            if(bmiCalculation <= 18.4) System.out.println("You are underweight");
-            else if(bmiCalculation >= 18.5 && bmiCalculation <= 24.9) System.out.println("You are normal");
-            else if(bmiCalculation >= 25.0 && bmiCalculation <= 29.9) System.out.println("You are overweight");
-            else System.out.println("You are obese");
+        System.out.println("Your current BMI is: " + bmiCalculation);
+        printBMICategory(bmiCalculation);
+
+        sc.close();
+    }
+
+    public static int getUserHeight(String unit, Scanner sc) {
+        System.out.println("Enter your height in " + unit);
+        return sc.nextInt();
+    }
+
+    public static float getUserWeight(Scanner sc) {
+        System.out.println("Enter your weight in pounds");
+        return sc.nextFloat();
+    }
+
+    public static float calculateBMI(float weightInKg, float heightInMeters) {
+        return weightInKg / (heightInMeters * heightInMeters);
+    }
+
+    public static void printBMICategory(float bmi) {
+        if (bmi <= 18.4) {
+            System.out.println("You are underweight");
+        } else if (bmi <= 24.9) {
+            System.out.println("You are normal");
+        } else if (bmi <= 29.9) {
+            System.out.println("You are overweight");
+        } else {
+            System.out.println("You are obese");
         }
     }
+}
