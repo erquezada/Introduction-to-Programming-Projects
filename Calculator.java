@@ -4,35 +4,46 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
-        double num1 = scanner.nextDouble();
+        double num1 = getInputNumber(scanner, "Enter the first number: ");
+        double num2 = getInputNumber(scanner, "Enter the second number: ");
+        char operator = getInputOperator(scanner);
 
-        System.out.print("Enter the second number: ");
-        double num2 = scanner.nextDouble();
+        double result = performOperation(num1, num2, operator);
 
+        if (Double.isNaN(result)) {
+            System.out.println("Invalid operator");
+        } else {
+            System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+        }
+    }
+
+    private static double getInputNumber(Scanner scanner, String prompt) {
+        System.out.print(prompt);
+        return scanner.nextDouble();
+    }
+
+    private static char getInputOperator(Scanner scanner) {
         System.out.print("Enter the operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
+        return scanner.next().charAt(0);
+    }
 
-        double result;
-
+    private static double performOperation(double num1, double num2, char operator) {
         switch (operator) {
             case '+':
-                result = num1 + num2;
-                break;
+                return num1 + num2;
             case '-':
-                result = num1 - num2;
-                break;
+                return num1 - num2;
             case '*':
-                result = num1 * num2;
-                break;
+                return num1 * num2;
             case '/':
-                result = num1 / num2;
-                break;
+                if (num2 != 0) {
+                    return num1 / num2;
+                } else {
+                    System.out.println("Division by zero is not allowed");
+                    return Double.NaN;
+                }
             default:
-                System.out.println("Invalid operator");
-                return;
+                return Double.NaN;
         }
-
-        System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
     }
 }
