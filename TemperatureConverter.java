@@ -1,28 +1,24 @@
 import java.util.Scanner;
-
 public class TemperatureConverter {
-	public static void main(String[] args) {
-		Scanner userScnr = new Scanner(System.in);
-		
-		System.out.println("Enter a temperature in fahrenheit: ");
-		double tempFah = userScnr.nextDouble();
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-		double tempCel = fahToCel(tempFah);
-		System.out.println("The temperature in celsius is: " + tempCel);
+        System.out.print("Enter a temperature in Fahrenheit: ");
+        double tempFah = scanner.nextDouble();
+        scanner.close();
 
-		double tempKel = celToKel(tempCel);
-		System.out.println("The temperature in kelvin is: " + tempKel);
+        double tempCel = fahToCel(tempFah);
+        double tempKel = celToKel(tempCel);
 
-	}
-	// Converts fahrenheit to celsius
-	public static double fahToCel(double fah) {
-		double cel = ((fah - 32) * 5) /9;
-		return cel;
-	}
-
-	// Converts celsius to kelvin
-	public static double celToKel(double cel){
-		double kel = cel + 273.15;
-		return kel;
-	}
+        System.out.println("The temperature in Celsius is: " + tempCel);
+        System.out.println("The temperature in Kelvin is: " + tempKel);
+    }
+    // Converts Fahrenheit to Celsius
+    public static double fahToCel(double fah) {
+        return ((fah - 32) * 5) / 9;
+    }
+    // Converts Celsius to Kelvin
+    public static double celToKel(double cel) {
+        return cel + 273.15;
+    }
 }
