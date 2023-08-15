@@ -36,19 +36,18 @@ public class IceWalkerWithItems {
     public static boolean isValidMove(int row, int col, int[][] board) {
         return row >= 0 && row < board.length && col >= 0 && col < board[0].length;
     }
-
     public static boolean playGame(int[][] board, int row, int col) {
         Scanner scanner = new Scanner(System.in);
         int collectedItems = 0;
-
+    
         while (true) {
             System.out.println("You are currently at row: " + row + " col: " + col);
             printBoard(board);
-
+    
             char direction = scanner.next().charAt(0);
             int newRow = row;
             int newCol = col;
-
+    
             if (direction == 'l') {
                 newCol--;
             } else if (direction == 'r') {
@@ -58,7 +57,7 @@ public class IceWalkerWithItems {
             } else if (direction == 'd') {
                 newRow++;
             }
-
+    
             if (isValidMove(newRow, newCol, board)) {
                 row = newRow;
                 col = newCol;
@@ -68,13 +67,12 @@ public class IceWalkerWithItems {
                     board[row][col] = 0;
                 }
                 board[row][col]--;
-                if (board[row][col] <= 0) {
+                if (board[row][col] == 2) { // Fix the condition here
                     return true;
                 }
             } else {
                 System.out.println("You are out of bounds. Please go in a different direction.");
             }
-
             if (row == board.length - 1 && col == board[0].length - 1) {
                 break;
             }
@@ -83,7 +81,6 @@ public class IceWalkerWithItems {
         printBoard(board);
         return false;
     }
-
     public static void printBoard(int[][] board) {
         for (int[] row : board) {
             for (int value : row) {
