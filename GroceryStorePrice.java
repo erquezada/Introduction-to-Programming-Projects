@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.io.*;
-public class FruitsPrice {
+public class GroceryStorePrice {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("grocery-store-database.txt"); // change the file name to fit your own file's name.
         Scanner scnr = new Scanner(file);
