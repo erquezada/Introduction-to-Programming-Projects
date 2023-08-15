@@ -1,0 +1,254 @@
+Apples 1.32
+Strawberries 2.23
+Oranges 1.50
+Peaches 1.89
+Cantaloupe 2.34
+Bananas 0.58
+Mangos 1.50
+Grapes 2.75
+Watermelon 3.25
+Pineapple 2.99
+Blueberries 3.50
+Raspberries 4.20
+Kiwi 1.90
+Cherries 2.10
+Plums 1.65
+Pears 1.95
+Blackberries 3.00
+Lemons 1.25
+Limes 0.90
+Pomegranate 2.45
+Papaya 3.75
+Coconut 2.80
+Guava 1.80
+Passion Fruit 2.15
+Dragon Fruit 4.50
+Avocado 2.65
+Melon 3.10
+Starfruit 2.25
+Fig 2.05
+Apricot 2.40
+Kiwifruit 1.80
+Persimmon 2.60
+Cranberries 1.70
+Gooseberries 2.30
+Clementine 1.75
+Lingonberries 2.20
+Nectarine 2.10
+Honeydew 3.20
+Lychee 3.60
+Mango 1.95
+Rhubarb 2.35
+Tangerine 1.65
+Cranberry 2.05
+Jackfruit 4.10
+Tangelo 2.00
+Durian 5.00
+Mulberry 3.25
+Cucumber 1.45
+Bell Pepper 0.80
+Tomato 0.75
+Carrot 0.60
+Lettuce 1.20
+Broccoli 1.75
+Cauliflower 1.90
+Spinach 1.30
+Kale 1.40
+Zucchini 1.10
+Brussels Sprouts 1.50
+Cabbage 1.05
+Potato 0.90
+Sweet Potato 1.20
+Onion 0.70
+Garlic 0.60
+Ginger 1.10
+Mushroom 1.45
+Eggplant 1.25
+Asparagus 2.00
+Pumpkin 2.20
+Squash 1.80
+Rutabaga 1.65
+Beet 1.35
+Radish 0.95
+Turnip 1.00
+Parsnip 1.10
+Celery 1.20
+Artichoke 2.15
+Leek 1.70
+Scallion 1.25
+Peas 1.80
+Green Bean 1.50
+Snow Pea 1.60
+Snap Pea 1.65
+Bok Choy 1.55
+Chard 1.40
+Collard Greens 1.30
+Watercress 1.25
+Romaine Lettuce 1.10
+Iceberg Lettuce 0.90
+Arugula 1.35
+Endive 1.20
+Cilantro 1.00
+Parsley 0.80
+Mint 1.10
+Basil 1.25
+Thyme 1.30
+Rosemary 1.20
+Sage 1.15
+Oregano 1.05
+Dill 1.10
+Chives 0.95
+Bay Leaf 0.85
+Saffron 5.50
+Coriander 0.80
+Cumin 0.90
+Turmeric 1.00
+Paprika 0.95
+Cinnamon 1.05
+Nutmeg 1.10
+Cloves 1.15
+Vanilla 1.20
+Allspice 1.25
+Cardamom 1.30
+Fennel 0.85
+Star Anise 1.00
+Chamomile 0.75
+Peppermint 0.80
+Lavender 1.10
+Rose Petals 1.20
+Lemon Balm 0.90
+Ginger 1.00
+Apples 1.32
+Strawberries 2.23
+Oranges 1.50
+Peaches 1.89
+Cantaloupe 2.34
+Bananas 0.58
+Mangos 1.50
+Grapes 2.75
+Watermelon 3.25
+Pineapple 2.99
+Blueberries 3.50
+Raspberries 4.20
+Kiwi 1.90
+Cherries 2.10
+Plums 1.65
+Pears 1.95
+Blackberries 3.00
+Lemons 1.25
+Limes 0.90
+Pomegranate 2.45
+Papaya 3.75
+Coconut 2.80
+Guava 1.80
+Passion Fruit 2.15
+Dragon Fruit 4.50
+Avocado 2.65
+Melon 3.10
+Starfruit 2.25
+Fig 2.05
+Apricot 2.40
+Kiwifruit 1.80
+Persimmon 2.60
+Cranberries 1.70
+Gooseberries 2.30
+Clementine 1.75
+Lingonberries 2.20
+Nectarine 2.10
+Honeydew 3.20
+Lychee 3.60
+Mango 1.95
+Rhubarb 2.35
+Tangerine 1.65
+Cranberry 2.05
+Jackfruit 4.10
+Tangelo 2.00
+Durian 5.00
+Mulberry 3.25
+Cucumber 1.45
+Bell Pepper 0.80
+Tomato 0.75
+Carrot 0.60
+Lettuce 1.20
+Broccoli 1.75
+Cauliflower 1.90
+Spinach 1.30
+Kale 1.40
+Zucchini 1.10
+Brussels Sprouts 1.50
+Cabbage 1.05
+Potato 0.90
+Sweet Potato 1.20
+Onion 0.70
+Garlic 0.60
+Ginger 1.10
+Mushroom 1.45
+Eggplant 1.25
+Asparagus 2.00
+Pumpkin 2.20
+Squash 1.80
+Rutabaga 1.65
+Beet 1.35
+Radish 0.95
+Turnip 1.00
+Parsnip 1.10
+Celery 1.20
+Artichoke 2.15
+Leek 1.70
+Scallion 1.25
+Peas 1.80
+Green Bean 1.50
+Snow Pea 1.60
+Snap Pea 1.65
+Bok Choy 1.55
+Chard 1.40
+Collard Greens 1.30
+Watercress 1.25
+Romaine Lettuce 1.10
+Iceberg Lettuce 0.90
+Arugula 1.35
+Endive 1.20
+Cilantro 1.00
+Parsley 0.80
+Mint 1.10
+Basil 1.25
+Thyme 1.30
+Rosemary 1.20
+Sage 1.15
+Oregano 1.05
+Dill 1.10
+Chives 0.95
+Bay Leaf 0.85
+Saffron 5.50
+Coriander 0.80
+Cumin 0.90
+Turmeric 1.00
+Paprika 0.95
+Cinnamon 1.05
+Nutmeg 1.10
+Cloves 1.15
+Vanilla 1.20
+Allspice 1.25
+Cardamom 1.30
+Fennel 0.85
+Star Anise 1.00
+Chamomile 0.75
+Peppermint 0.80
+Lavender 1.10
+Rose Petals 1.20
+Lemon Balm 0.90
+Ginger 1.00
+Soap 2.50
+Shampoo 3.99
+Toothpaste 1.75
+Toilet Paper 0.75
+Paper Towels 1.20
+Dish Soap 1.50
+Laundry Detergent 4.50
+Cleaning Spray 2.25
+Trash Bags 3.00
+Broom 2.00
+Mop 2.50
+Bleach 1.25
+Dish Towels 1.00
+Air Freshener 1.75
